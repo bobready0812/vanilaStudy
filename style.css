@@ -24,6 +24,17 @@
     align-items: center;
     flex-direction: column;
   }
+
+  .modal2 {
+    width: 50vw;
+    height: 45vh;
+    background-color: #393e46;
+    border-radius: 1.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
   
   .titleDiv {
     display: flex;
@@ -105,4 +116,7 @@
     /* color: #222831; */
     text-shadow: 0 0 0.1em, 0 0 0.3em;
     transition-duration: 0.5s;
+  }
+  .hidden {
+      display: none;
   }
