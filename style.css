@@ -1,0 +1,108 @@
+.hidden {
+    display: none;
+  }
+  
+  body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222831;
+    color: #eeeeee;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  .modal {
+    width: 50vw;
+    height: 55vh;
+    background-color: #393e46;
+    border-radius: 1.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .titleDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+  }
+  
+  .inpDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 60%;
+  }
+  
+  .btnDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 20%;
+    margin-bottom: 20px;
+  }
+  
+  .title {
+    font-size: 18px;
+  }
+  
+  .sub {
+    font-size: 13px;
+  }
+  
+  .input {
+    background-color: transparent;
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+    width: 40%;
+    height: 10%;
+    font-size: 20px;
+    color: #f5f9ee;
+    margin-bottom: 20px;
+    transition-duration: 0.5s;
+    outline: none;
+  }
+  
+  .input::placeholder {
+    font-size: 14px;
+  }
+  
+  .btn {
+    background-color: #0092ca;
+    width: 40%;
+    height: 40%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    border: 0px solid transparent;
+    font-size: 18px;
+    box-shadow: #0076a5 0.5px 2px 1.5px 1.5px;
+    transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    margin-bottom: 4px;
+  }
+  
+  .btn:active {
+    margin-left: 5px;
+    margin-right: 5px;
+    box-shadow: none;
+  }
+  
+  .sub:hover {
+    /* color: #222831; */
+    text-shadow: 0 0 0.1em, 0 0 0.3em;
+    transition-duration: 0.5s;
+  }
