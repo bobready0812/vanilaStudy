@@ -5,16 +5,14 @@ const cfpwInput = document.querySelector("#i-d");
 const button = document.querySelector(".btn");
 const modal = document.querySelector("#mod");
 const loginBtn = document.querySelector(".sub");
-let index = 0;
+let num = 0;
 
 const getValue = () => {
-  if(index == 0) {
+  if(num % 2 == 0) {
   const password = pwInput.value;
   const cfpassword = cfpwInput.value;
   const confirm = judge(password,cfpassword); //함수가 return 하는 값을 변수에 저장할 수 있다.
-  
- 
-  
+
   const data = {
       email:emailInput.value,
       id:idInput.value,
@@ -40,6 +38,7 @@ const judge = (pw,cf) => {
 };
 
 const changeModal = () => {
+  if(num % 2 == 1)  {
    modal.classList.remove("modal");
    modal.classList.add("modal2");
    emailInput.classList.add("hidden");
