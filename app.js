@@ -20,7 +20,7 @@ const getValue = () => {
       confirm, //confirm:confirm 과 같다
 
   }
-    
+  console.log(num);  
   console.log(data);
 } else {
   const id = idInput.value;
@@ -38,7 +38,9 @@ const judge = (pw,cf) => {
 };
 
 const changeModal = () => {
-  if(num % 2 == 1)  {
+  if(num % 2 == 0)  {
+   num++
+   console.log(num);
    modal.classList.remove("modal");
    modal.classList.add("modal2");
    emailInput.classList.add("hidden");
@@ -47,7 +49,18 @@ const changeModal = () => {
    pwInput.value = "";
    button.innerText = "Log in";
    loginBtn.innerText = "Don't you have an account?"
-   index = 1;
+  } else {
+   num++
+   console.log(num);
+   modal.classList.remove("modal2");
+   modal.classList.add("modal");
+   emailInput.classList.remove("hidden");
+   cfpwInput.classList.remove("hidden");
+   idInput.value = "";
+   pwInput.value = "";
+   button.innerText = "Create Account";
+   loginBtn.innerText = "Already have an account?"
+  };
 };
 
 
